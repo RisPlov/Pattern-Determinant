@@ -104,8 +104,6 @@ public class YX {
                     key=i;
                 }
             }
-            //System.out.println(max);
-            //System.out.println(key);
             System.out.println("Исследуемый рисунок: "+exadres+" похож на рисунок:"+number_img[key]+" с вероятностью: "+max+"   %.");
         } catch (IOException e) {
             e.printStackTrace();
