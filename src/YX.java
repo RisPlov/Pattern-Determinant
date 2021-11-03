@@ -104,7 +104,17 @@ public class YX {
                     key=i;
                 }
             }
-            System.out.println("Исследуемый рисунок: "+exadres+" похож на рисунок:"+number_img[key]+" с вероятностью: "+max+"   %.");
+            ///System.out.println("Исследуемый рисунок: "+exadres+" похож на рисунок:"+number_img[key]+" с вероятностью: "+max+"   %.");
+            Character result = number_img[key].charAt(0);
+            if (result.equals('C')){
+                System.out.println("Исследуемый рисунок похож на окружность с вероятностью: "+max+"%.");
+            }
+            else if (result.equals('s')){
+                System.out.println("Исследуемый рисунок похож на квадрат с вероятностью: "+max+"%.");
+            }
+            else if (result.equals('T')){
+                System.out.println("Исследуемый рисунок похож на треугольник с вероятностью: "+max+"%.");
+            }
         } catch (IOException e) {
             e.printStackTrace();
         }
